@@ -1,0 +1,10 @@
+ID Solicitud,ID Jugador,Jugador,Fecha Solicitud,Dias Solicitados,Motivo,Estado DT,Fecha Resolucion
+1,3,Rios Facundo,2025-04-10,5,Viaje familiar,Aprobado,2025-04-11
+2,2,Gomez Sebastian,2025-04-15,15,Lesion rodilla,Aprobado,2025-04-15
+3,4,Molina Diego,2025-05-01,3,Asuntos personales,Aprobado,2025-05-02
+4,1,Ferreyra Marcos,2025-05-10,5,Vacaciones,Aprobado,2025-05-10
+5,9,Cardozo Leandro,2025-05-20,10,Viaje al exterior,Aprobado,2025-05-21
+6,10,Villalba Rodrigo,2025-06-01,15,Vacaciones anuales,Aprobado,2025-06-01
+7,7,Torres Agustin,2025-06-05,7,Estudio examenes,Aprobado,2025-06-05
+8,5,Perez Tomas,2025-06-10,3,Tramites personales,Rechazado,2025-06-10
+9,3,Rios Facundo,2026-06-09,4,viaje familiar,Aprobado,2026-06-09

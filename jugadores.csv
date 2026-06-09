@@ -1,0 +1,11 @@
+ID,Apellido y Nombre,DNI,Posicion,Categoria,Dias Disponibles,Dias Usados,Estado
+1,Ferreyra Marcos,32145678,Pilar,Primera,15,5,Activo
+2,Gomez Sebastian,28976543,Hooker,Primera,0,15,En licencia
+3,Rios Facundo,35421098,Apertura,Primera,6,4,En licencia
+4,Molina Diego,30654321,Fullback,Primera,3,12,Activo
+5,Perez Tomas,33789012,Ala,M20,15,0,Activo
+6,Navarro Julian,29345678,Centro,Primera,0,10,Suspendido
+7,Torres Agustin,36012345,Pilar,M20,8,7,Activo
+8,Benitez Cristian,31567890,Medio Scrum,Primera,15,0,Activo
+9,Cardozo Leandro,34234567,Segunda,M20,5,10,Activo
+10,Villalba Rodrigo,27890123,Wing,Primera,0,15,En licencia
