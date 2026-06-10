@@ -1,8 +1,7 @@
-
 #  SIMULADOR DE CHATBOT — Club Tilcara
 #  Proceso: Solicitud de Licencia de Jugador
 #  TPI — Organización Empresarial — UTN TUPaD 2026
-#  Integrantes: NUÑEZ, Lucia y ALTAVISTA, Lucio
+#  Integrantes: NUÑEZ, Lucía; ALTAVISTA, Lucio
 
 ARCHIVO_JUGADORES  = "jugadores.csv"
 ARCHIVO_HISTORIAL  = "historial_licencias.csv"
@@ -143,12 +142,12 @@ def estado_validar_jugador(jugadores):
 
         # Camino infeliz: suspendido
         if jugador["estado"] == "Suspendido":
-            bot(f"⚠️  Hola, {jugador['nombre']}.")
+            bot(f" Hola, {jugador['nombre']}.")
             bot("Tu cuenta está suspendida. Contactá al club para más información.")
             return None, "suspendido"
 
         bot(f" Jugador encontrado: {jugador['nombre']} — {jugador['categoria']}")
-        bot(f"   Días disponibles: {jugador['disponibles']} | Días usados: {jugador['usados']}")
+        bot(f" Días disponibles: {jugador['disponibles']} | Días usados: {jugador['usados']}")
         return jugador, "ok"
 
 def estado_consultar_dias(jugador):
@@ -210,7 +209,7 @@ def estado_pedir_dias(jugador):
         # Camino infeliz: supera los disponibles
         if dias > jugador["disponibles"]:
             bot(f" Solo tenés {jugador['disponibles']} días disponibles.")
-            bot("   Podés solicitar hasta ese máximo.")
+            bot(" Podés solicitar hasta ese máximo.")
             continue
 
         return dias
@@ -253,7 +252,7 @@ def estado_aprobar(jugadores, jugador, dias, motivo):
     linea()
     bot(f" ¡Licencia APROBADA para {jugador['nombre']}!")
     bot(f"   Días otorgados: {dias}")
-    bot(f"   Días restantes: {jugador['disponibles'] - dias}")
+    bot(f"   Días restantes: {jugadores[jugador['id']]['disponibles']}")
     bot("   Los archivos fueron actualizados correctamente.")
 
 def estado_rechazar_dt(jugador):
@@ -337,4 +336,3 @@ def ejecutar_bot():
 # ── PUNTO DE ENTRADA ─────────────────────────────────────
 if __name__ == "__main__":
     ejecutar_bot()
-
